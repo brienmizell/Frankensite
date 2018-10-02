@@ -59,9 +59,12 @@ body {
 .profile-image {
     width: 130px;
 }
-/* img adapts to container */
+/* img adapts to container.
+donstrain either by width or height
+not both.that messes up the aspect ratio*/
 .profile-image img {
     width: 100%;
+    border-radius: 50%;
 }
 
 /* flexbox */
