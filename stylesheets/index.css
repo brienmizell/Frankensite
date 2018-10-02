@@ -37,7 +37,7 @@ body {
 .hero-image {
     /* Because the image is in a different folder, must use ../images/ before the file name */
     background-image: url(../images/water.jpg);
-    min-height: 500px;
+    min-height: 300px;
     min-width: 100%;
     background-repeat: no-repeat;
     background-position:  top center;
@@ -55,9 +55,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+.about-me {
+    padding: 0 8px;
+}
 /* container determines max size */
 .profile-image {
     width: 130px;
+    /* another centering technique. */
+    margin: 0 auto;
 }
 /* img adapts to container.
 donstrain either by width or height
@@ -68,4 +73,21 @@ not both.that messes up the aspect ratio*/
 }
 
 /* flexbox */
+
+/* 
+Responsive Web Design Implementation
+a.k.a. Media Queries!
+if/else statements for your CSS
+*/
+
+/* 
+Common "breakpoints
+S, M, L, XL, Party size
+
+500px
+768px
+1024px
+1200px
+1400px
+*/
 
