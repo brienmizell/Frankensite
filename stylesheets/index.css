@@ -1,3 +1,10 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 html, body {
     padding: 0;
     margin: 0;
@@ -108,9 +115,13 @@ S, M, L, XL, Party size
     .about-me > div {
         outline: 1px solid red;
     }
+    .about-me-container {
+        width: 70%;
+        padding-right: 18px;
+    }
     .profile-image {
         outline: 5px solid red;
-        width: 200px;
+        width: 30%;
     }
 
 
