@@ -91,3 +91,8 @@ S, M, L, XL, Party size
 1400px
 */
 
+@media screen and (min-width: 500px) {
+    .profile-image {
+        outline: 5px solid red;
+    }
+}
