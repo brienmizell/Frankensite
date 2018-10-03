@@ -61,8 +61,8 @@ body {
 /* container determines max size */
 .profile-image {
     width: 130px;
-    /* another centering technique. */
-    margin: 0 auto;
+    /* another centering technique! */
+    margin: 0 auto;    
 }
 /* img adapts to container.
 donstrain either by width or height
@@ -81,6 +81,7 @@ if/else statements for your CSS
 */
 
 /* 
+Common "≈
 Common "breakpoints
 S, M, L, XL, Party size
 
@@ -92,7 +93,28 @@ S, M, L, XL, Party size
 */
 
 @media screen and (min-width: 500px) {
+    
+    /* 
+    1. Turn the .about-me section into a flex container
+    2. Set the width of the .about-me-container so that it takes up 70% of the width
+    3. Set the width of the .profile-i;mage so that it looks good.
+    4. Tweak the sizes because it'll look jacked up on the first few attempts. 
+    */
+    .about-me {
+        display: flex;
+    
+    }
+    /* "Direct Child" selector */
+    .about-me > div {
+        outline: 1px solid red;
+    }
     .profile-image {
         outline: 5px solid red;
+        width: 200px;
     }
+
+
+
+    
+
 }
