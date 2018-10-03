@@ -48,8 +48,8 @@ body {
     min-width: 100%;
     background-repeat: no-repeat;
     background-position:  top center;
-    background-size: contain;
-    opacity: .5;
+    background-size: cover;
+    /* opacity: .5; */
 }
 
 .hero-image h2{
@@ -109,18 +109,19 @@ S, M, L, XL, Party size
     */
     .about-me {
         display: flex;
+        flex-direction: row-reverse;
     
     }
     /* "Direct Child" selector */
     .about-me > div {
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
     }
     .about-me-container {
         width: 70%;
         padding-right: 18px;
     }
     .profile-image {
-        outline: 5px solid red;
+        /* outline: 5px solid red; */
         width: 30%;
     }
 
@@ -128,4 +129,24 @@ S, M, L, XL, Party size
 
     
 
+}
+
+@media screen and (min-width: 700px) {
+    .hero-text h2 {
+        font-size: 48px;
+        outline: 1px solid red;
+    }
+    .header-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* .header-text > * {
+        outline: 1px solid red;
+    } */
+}
+@media screen and (min-width: 900px) {
+    .header-text > nav {
+        display: none;
+    }
 }
