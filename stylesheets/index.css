@@ -1,3 +1,15 @@
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
 html {
     box-sizing: border-box;
   }
@@ -81,17 +93,22 @@ not both.that messes up the aspect ratio*/
 
 .contact-links {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 18px 12px;
+    padding: 6.25px 6.25px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-links a {
+    margin: 0 5.375px;
 }
 
 .contact-links .fab,
 .contact-links .fas {
     font-size: 36px;
     color: white;
-    margin: 0 8px;
-    transition: all .5s;
+    margin: 0;
+    /* transition: transform .375s cubic-bezier(.64,.36,.52,1.68); */
 }
 
 .contact-links a:hover .fab,
@@ -100,7 +117,12 @@ not both.that messes up the aspect ratio*/
 .contact-links a:active .fas
 {
     color: red;
-    font-size: 48px;
+    /* font-size: 48px; */
+    /* transform: scale(1.375); */
+    animation-name: zoom;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 } 
 
 /* flexbox */
